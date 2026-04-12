@@ -433,8 +433,8 @@
     margin-top: 20px;
     }
     .about-right img {
-        height: 500;
-        width: 500px;
+        height: 500px;
+        width: auto;
     }
     .youtube h2 {
       font-size: 40px;
@@ -692,9 +692,8 @@
     margin-top: 20px;
     }
     .about-right img {
-        height: auto;
-        width: 400px;
-        display: block;
+        height: 400px;
+        width: auto;
     }
 
 /* SERVICES SECTION */
