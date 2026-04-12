@@ -588,12 +588,12 @@
   padding: 20px;
 }
 .footer p {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-align: center;
 }
 .footer a {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
   }
@@ -848,13 +848,13 @@
     padding: 20px;
   }
   .footer p {
-    font-size: 25px;
+    font-size: 15px;
     color: white;
     text-align: center;
   }
 
 .footer a {
-  font-size: 25px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
   }
