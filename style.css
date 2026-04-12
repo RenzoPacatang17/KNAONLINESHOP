@@ -146,7 +146,6 @@
   padding: 10px 0;
 }
 
-
 /*ABOUT SECTION */
 
 .about-container {
@@ -156,38 +155,29 @@
     padding: 20px;
     background-color: white;
 }
-
-
 .about-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
-
-
 .about-left {
     flex: 1;
 }
-
 .about-left h2 {
     font-size: 50px;
     text-align: left;
     margin-bottom: 10px;
 }
-
 .about-left p {
     font-size: 20px;
     line-height: 1.6;
 }
-
-
 .about-right {
     flex: 1;
     display: flex;
     justify-content: center;
 }
-
 .about-right img {
     width: 100%;
     max-width: 700px;
@@ -195,8 +185,6 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
-
 .youtube {
     display: flex;
     flex-direction: column;
@@ -204,7 +192,6 @@
     text-align: center;
     gap: 20px;
 }
-
 .youtube iframe {
     width: 100%;
     max-width: 560px;
@@ -225,6 +212,7 @@
 .card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 .card-item {
@@ -263,25 +251,18 @@
   margin: 10px 0;
 }
 .list-item {
-  display: flex;
-  justify-content: center;    
-  align-items: center;        
-  height: 100%;               
+  width: 200px;              
 }
 .list-item ul {
-  list-style: none;         
-  padding: 0;
-  margin: 0;
+  list-style: none;
   text-align: center;         
 }
-.list-item li {
-  margin: 10px 0;            
+.list-item ul li {
+  margin-bottom: 10px;
 }
 .list-item li a {
   color: white;
   text-decoration: none;
-  font-size: 25px;
-  padding: 20px;
 }
 #form-message {
     margin-top: 10px;
@@ -300,7 +281,10 @@
 }
 .form {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .form > div {
@@ -309,13 +293,14 @@
 .input-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin: 0 20px;
+  align-items: center;
+  width: 400px;
 }
 .input-form input,
 .input-form textarea {
   width: 100%;
   padding: 10px;
+  margin: 10px;
   box-sizing: border-box;
 }
 .submit-btn {
@@ -327,6 +312,9 @@
   background-color: red;
   color: white;
   padding: 10px;
+}
+.submit-btn:hover {
+  background-color: green;
 }
 
 /*FOOTER SECTION*/
@@ -415,8 +403,8 @@
   }
 
   .image img {
-    height: 700px;
-    width: 700px;
+    height: 800px;
+    width: 800px;
   }
   .right h2 {
     font-size: 60px;
@@ -449,8 +437,8 @@
     margin-top: 20px;
     }
     .about-right img {
-        height: 700;
-        width: 700px;
+        height: 500;
+        width: 500px;
     }
     .youtube h2 {
       font-size: 40px;
@@ -512,23 +500,12 @@
 /* CONTACT SECTION */
 
   .form {
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 20px;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
-  .list-item ul {
-    list-style: none;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
   }
   .input-form {
-    display: flex;
-    flex-direction: column;
-    
-    gap: 15px;
     width: 100%;
+    max-width: 500px;
   }
   .form input,
   .form textarea,
@@ -537,19 +514,20 @@
     padding: 12px;
     font-size: 16px;
     border: none;
+    outline: none;
     border border-radius: 5px;
-    box-sizing: border-box;
   }
-.submit-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: red;
-  color: white;
-  padding: 10px;
-}
+  .submit-btn {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 10px;
+  }
+  .list-item ul {
+    list-style: none;
+    padding: 0;
+  }
 
 .contact{
   display: flex;
@@ -561,15 +539,11 @@
   margin: 10px 0;
 }
 .list-item {
-  display: flex;
-  justify-content: center;    
-  align-items: center;        
-  height: 100%;               
+ width: 100%;          
+ text-align: center;
 }
 .list-item ul {
-  list-style: none;         
-  padding: 0;
-  margin: 0;
+  list-style: none;
   text-align: center;         
 }
 .list-item li {
@@ -604,11 +578,6 @@
   flex: 1;
 }
 
-
-/* FOOTER SECTION */
-  .footer p {
-    text-align: center;
-  }
   /*FOOTER SECTION*/
 
 .footer-container {
@@ -621,6 +590,7 @@
 .footer p {
   font-size: 25px;
   color: white;
+  text-align: center;
 }
 .footer a {
   font-size: 25px;
@@ -632,6 +602,10 @@
 /*MEDIA QUERY FOR PHONE */
 
 @media screen and (max-width: 768px) {
+
+  * {
+    max-width: 100%;
+  }
 
 /* NAVIGATION SECTION */
 
@@ -692,8 +666,8 @@
   }
 
   .image img {
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 450px;
   }
   .right h2 {
     font-size: 34px;
@@ -729,46 +703,36 @@
     }
 
 /* SERVICES SECTION */
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .card-item {
-    width: 100%;
-    margin: 0 20px;
-  }
-  .card-item p {
-    margin: 30px 0;
-  }
 
   .services {
-    width: 100%;
     text-align: center;
     margin:20px 0;
   }
-  .services h2 {
+   .services h2 {
     font-size: 50px;
     color: white;
   }
   .card {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
+     gap: 20px;
   }
   .card-item {
     background-color: white;
-    width: calc(33.33% - 20px);
     padding: 20px;
-  }
-  .card-item img {
     width: 100%;
-    height: auto;
+    margin: 0 20px;
   }
   .card-item p {
     text-align: center;
     font-size: 15px;
     margin: 10px 0;
+    margin: 30px 0;
+  }
+  .card-item img {
+    width: 100%;
+    height: auto;
   }
   .card-item input {
     display: block;
@@ -782,18 +746,49 @@
   }
 
 /* CONTACT SECTION */
-
-  .form {
-    display: grid;
-    grid-template-columns: 1fr 1 fr;
-    gap:  20px;
+  
+  .contact-container {
+    padding: 20px 10px;
   }
+  .contact{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+  .list-item {
+    display: flex;
+    justify-content: center;    
+    align-items: center;             
+}
   .list-item ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;         
+    text-align: center;  
+  }
+  .list-item li {
+  margin: 10px 0;            
+  }
+.list-item li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  }
+  .form {
+    margin: 0 10px;
+    gap: 15px;
   }
   .input-form {
-    grid-column: span 2;
+   width: 100%;
+  }
+  .input-form input,
+  .input-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
   }
   .form input,
   .form textarea
@@ -802,36 +797,6 @@
     margin-bottom: 10px;
   }
 
-.contact{
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  color: white;
-  width: 100%;
-  padding: 20px 0;
-  margin: 10px 0;
-}
-.list-item {
-  display: flex;
-  justify-content: center;    
-  align-items: center;        
-  height: 100%;               
-}
-.list-item ul {
-  list-style: none;         
-  padding: 0;
-  margin: 0;
-  text-align: center;         
-}
-.list-item li {
-  margin: 10px 0;            
-}
-.list-item li a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 20px;
-}
 #form-message {
     margin-top: 10px;
     padding: 10px;
@@ -855,18 +820,14 @@
 .form > div {
   flex: 1;
 }
+
 .input-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin: 0 20px;
 }
-.input-form input,
-.input-form textarea {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
+
 .submit-btn {
   display: flex;
   align-items: center;
@@ -879,22 +840,19 @@
 }
 
 /* FOOTER SECTION */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
   .footer p {
+    font-size: 25px;
+    color: white;
     text-align: center;
   }
-  /*FOOTER SECTION*/
 
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding: 20px;
-}
-.footer p {
-  font-size: 25px;
-  color: white;
-}
 .footer a {
   font-size: 25px;
   color: white;
