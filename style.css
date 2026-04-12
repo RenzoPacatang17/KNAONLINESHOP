@@ -114,8 +114,8 @@
   align-items: center;
 }
 .left img {
-  height: auto
-  width: 200px;
+  height: auto;
+  width: 700px;
 }
 .left .shopBtn {
   margin-top: 20px;
@@ -179,11 +179,8 @@
     justify-content: center;
 }
 .about-right img {
-    width: 100%;
-    max-width: 700px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
+    width: 700px;
 }
 .youtube {
     display: flex;
