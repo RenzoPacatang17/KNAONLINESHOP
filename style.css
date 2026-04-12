@@ -403,8 +403,7 @@
   }
 
   .image img {
-    height: 800px;
-    width: 800px;
+    width: 400px;
   }
   .right h2 {
     font-size: 60px;
@@ -666,8 +665,7 @@
   }
 
   .image img {
-    height: auto;
-    width: 450px;
+    width: 250px;
   }
   .right h2 {
     font-size: 34px;
